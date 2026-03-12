@@ -90,6 +90,7 @@ plugins:
               dial_addr: 106.55.91.174:443
             - addr: https://223.5.5.5/dns-query
             - addr: tcp://180.184.1.1
+              enable_pipeline: true
 
     - tag: forward_remote
       type: forward
@@ -99,6 +100,7 @@ plugins:
             - addr: tcp://1.1.1.1
               socks5: 127.0.0.1:10808
             - addr: tls://8.8.8.8
+              bootstrap: 119.29.29.29
 
     - tag: local_sequence
       type: sequence
